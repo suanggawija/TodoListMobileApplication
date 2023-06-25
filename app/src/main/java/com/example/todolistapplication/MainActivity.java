@@ -8,13 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button add_button, edit_button;
+    Button add_button, edit_button, done_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         add_button = findViewById(R.id.add_button);
         edit_button = findViewById(R.id.edit);
+        done_btn = findViewById(R.id.done_btn);
 
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,5 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(aditButton);
             }
         });
+
+        done_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent doneBtn = new Intent(MainActivity.this, DoneActivity.class);
+                startActivity(doneBtn);
+            }
+        });
+
+        
     }
 }

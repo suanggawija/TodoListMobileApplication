@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
     <LinearLayout
         android:background="@drawable/rounded_1"
-        android:backgroundTint="@color/gray"
+        android:backgroundTint="@color/abu_muda"
         android:padding="25dp"
         android:layout_centerInParent="true"
         android:orientation="vertical"
@@ -16,6 +16,7 @@
         <TextView
             android:text="Login"
             android:textSize="30dp"
+            android:textColor="@color/hinau"
             android:textStyle="bold"
             android:textAlignment="center"
             android:layout_marginTop="15dp"
@@ -32,7 +33,7 @@
             android:drawablePadding="5dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="8dp"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"/>
         <EditText
             android:id="@+id/password"
@@ -46,13 +47,18 @@
             android:drawablePadding="5dp"
             android:paddingHorizontal="15dp"
             android:paddingVertical="8dp"
-            android:layout_width="300dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/login_button"
             android:text="Login"
+            android:textAllCaps="false"
             android:layout_marginTop="20dp"
             android:paddingVertical="5dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_1"
+            android:backgroundTint="@color/hinau"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>

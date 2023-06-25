@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DoneActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,8 +37,8 @@
                 android:textSize="15sp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_1"
-                android:backgroundTint="@color/abu_tua"
-                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/abu_tua"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Button
@@ -48,8 +48,8 @@
                 android:textSize="15sp"
                 android:layout_marginBottom="3dp"
                 android:background="@drawable/rounded_1"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/abu_tua"
+                android:backgroundTint="@color/abu_tua"
+                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <LinearLayout
@@ -130,7 +130,7 @@
                         android:paddingStart="8dp"
                         android:paddingEnd="8dp"
                         android:drawableLeft="@drawable/plus_icon"
-                        android:backgroundTint="@color/hinau"
+                        android:backgroundTint="@color/merah"
                         android:layout_marginLeft="10dp"
                         android:background="@drawable/plus_buttom"
                         android:layout_width="40dp"
@@ -142,21 +142,19 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/delete_all_button"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Add New"
+        android:text="Delete All"
         android:textSize="15sp"
         android:drawableStart="@drawable/plus_icon"
         android:paddingStart="12dp"
         android:paddingEnd="5dp"
         android:background="@drawable/rounded_1"
-        android:backgroundTint="@color/hinau"
+        android:backgroundTint="@color/merah"
         android:textColor="@color/white"
         android:layout_margin="15dp"
         android:layout_marginBottom="20dp"/>
-
-
 </RelativeLayout>
