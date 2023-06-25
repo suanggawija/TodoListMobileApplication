@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button add_button, edit_button, done_btn;
+    Button add_button, edit_button, done_btn, logout_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         add_button = findViewById(R.id.add_button);
         edit_button = findViewById(R.id.edit);
         done_btn = findViewById(R.id.done_btn);
+        logout_button = findViewById(R.id.logout_buttonn);
 
         add_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logoutButton = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(logoutButton);
+            }
+        });
+
+
     }
 }
